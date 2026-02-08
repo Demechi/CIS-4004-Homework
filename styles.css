@@ -1,0 +1,133 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page layout */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   JUMP MENU (LEFT SIDEBAR)
+   ========================= */
+#jumpMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100vh;
+    background-color: goldenrod;
+    padding: 20px;
+}
+
+#jumpMenu h2 {
+    margin-bottom: 15px;
+}
+
+#jumpMenu a {
+    display: block;
+    margin: 10px 0;
+    color: blue;
+    text-decoration: underline;
+}
+
+/* =========================
+   HEADER (FIXED TOP)
+   ========================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 15%;              /* ignores jump menu width */
+    width: 85%;
+    background-color: red;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+header p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Header navigation buttons */
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* =========================
+   MAIN CONTENT AREA
+   ========================= */
+main {
+    margin-left: 15%;
+    padding-top: 160px; /* space for fixed header */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   ARTICLES GRID
+   ========================= */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Individual article */
+article {
+    width: 300px; /* fixed width per instructions */
+    line-height: 1.6;
+}
+
+article h2 {
+    margin-bottom: 10px;
+}
+
+article a {
+    color: blue;
+}
+
+/* =========================
+   THANK YOU BOX (BOTTOM RIGHT)
+   ========================= */
+#thanks {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: lightblue;
+    padding: 20px 40px;
+    font-size: 28px;
+    font-family: serif;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+    margin-top: 60px;
+    padding: 30px;
+}
